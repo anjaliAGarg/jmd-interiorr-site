@@ -1,0 +1,149 @@
+{
+  "companyName": "JMD INTERIORS",
+  "brandTagline": "Small Spaces. Big Living.",
+  "contact": {
+    "email": "jmdconstructions2018@gmail.com",
+    "whatsappUrl": "https://wa.me/919999999999",
+    "phone": "+91 99999 99999"
+  },
+  "navigation": {
+    "links": [
+      { "label": "About", "path": "/about" },
+      { "label": "Services", "path": "/#services" },
+      { "label": "Projects", "path": "/projects" },
+      { "label": "Contact", "path": "/contact" }
+    ],
+    "consultButton": "Book Consultation"
+  },
+  "hero": {
+    "badge": "Launching in Gurgaon",
+    "eyebrow": "Small Spaces. Big Living.",
+    "heading": "Beautiful interiors for modern apartments",
+    "subheading": "Minimalist interiors designed for 2BHK & 3BHK homes in Gurgaon, focused on calm, clarity, and elevated living.",
+    "consultButton": "Free Site Visit & Consultation",
+    "projectsButton": "View Projects"
+  },
+  "homeCta": {
+    "eyebrow": "Ready to transform your home?",
+    "heading": "Move from concept to living with a single message.",
+    "button": "Chat on WhatsApp"
+  },
+  "trustSection": {
+    "eyebrow": "Why homeowners choose us",
+    "heading": "A premium experience without the premium noise.",
+    "benefits": [
+      { "label": "Premium Materials", "description": "Selected finishes and fittings for refined interiors." },
+      { "label": "Transparent Pricing", "description": "Clear estimates with no hidden costs for every project." },
+      { "label": "Personalized Design", "description": "Custom layouts created around your lifestyle and space." },
+      { "label": "Project Management", "description": "Reliable delivery with careful coordination from start to finish." }
+    ]
+  },
+  "servicesSection": {
+    "eyebrow": "Our services",
+    "heading": "Interior design for every home space.",
+    "services": [
+      {
+        "title": "Living Room",
+        "description": "Minimal lounges shaped for comfort, light, and spatial clarity.",
+        "imageAlt": "Living room design concept"
+      },
+      {
+        "title": "Bedroom",
+        "description": "Soothing bedroom concepts for calm evenings and restful mornings.",
+        "imageAlt": "Bedroom design concept"
+      },
+      {
+        "title": "Kitchen",
+        "description": "Elegant kitchens with clean lines, durable finishes, and intuitive flow.",
+        "imageAlt": "Kitchen design concept"
+      },
+      {
+        "title": "Complete Home",
+        "description": "Full home design that balances premium styling with practicality.",
+        "imageAlt": "Complete home design concept"
+      }
+    ]
+  },
+  "processSection": {
+    "eyebrow": "Our process",
+    "heading": "A clear process for every home.",
+    "steps": [
+      "Book Consultation",
+      "Site Visit",
+      "Design Proposal",
+      "Execution",
+      "Handover"
+    ]
+  },
+  "gallerySection": {
+    "eyebrow": "Design Concepts",
+    "heading": "Launching in Gurgaon with visual design concepts.",
+    "items": [
+      { "label": "Concept Visualization", "imageAlt": "Concept visualization 1" },
+      { "label": "Concept Visualization", "imageAlt": "Concept visualization 2" },
+      { "label": "Concept Visualization", "imageAlt": "Concept visualization 3" }
+    ]
+  },
+  "aboutPage": {
+    "eyebrow": "About JMD Interiors",
+    "heading": "Minimal premium interiors designed for homes in Gurgaon.",
+    "description": "JMD Interiors is a new Gurgaon-based studio focused on calm, functional, and refined interiors for 2BHK and 3BHK apartments. We deliver design-led spaces with premium finishes, transparent pricing, and a smooth process from first consultation to handover.",
+    "imageAlt": "Modern interior concept visualization"
+  },
+  "projectsPage": {
+    "eyebrow": "Design Concepts",
+    "heading": "Concept visualizations for premium apartment interiors.",
+    "description": "These concept visuals reflect the minimalist aesthetic and material approach that will be used in Gurgaon homes, demonstrating our focus on timeless details and spatial clarity.",
+    "cards": [
+      {
+        "title": "Soft Scandinavian Living",
+        "subtitle": "Airy tones with thoughtful furniture placement.",
+        "imageAlt": "Soft Scandinavian living concept"
+      },
+      {
+        "title": "Textured Kitchen Concept",
+        "subtitle": "Warm materials and seamless flow for daily use.",
+        "imageAlt": "Textured kitchen concept"
+      },
+      {
+        "title": "Calm Bedroom Scheme",
+        "subtitle": "Quiet, balanced composition for better rest.",
+        "imageAlt": "Calm bedroom scheme"
+      }
+    ]
+  },
+  "contactPage": {
+    "eyebrow": "Contact details",
+    "heading": "Reach out for a complimentary site visit.",
+    "description": "Based in Gurgaon, serving premium apartment interiors for 2BHK and 3BHK homes.",
+    "form": {
+      "name": "Name",
+      "phone": "Phone",
+      "apartment": "Apartment Name",
+      "message": "Message",
+      "submit": "Send on WhatsApp"
+    }
+  },
+  "modal": {
+    "eyebrow": "Book consultation",
+    "heading": "Share your details and start the WhatsApp conversation.",
+    "fields": {
+      "name": "Name",
+      "phone": "Phone",
+      "apartment": "Apartment Name",
+      "message": "Message"
+    },
+    "cancel": "Cancel",
+    "submit": "Submit to WhatsApp"
+  },
+  "footer": {
+    "description": "Premium minimalist interiors for 2BHK & 3BHK flats in Gurgaon, built around luxury, clarity, and modern living.",
+    "quickLinks": "Quick links",
+    "contact": "Contact",
+    "copyright": "© {year} JMD Interiors. All rights reserved."
+  },
+  "whatsappButton": "Chat on WhatsApp",
+  "altText": {
+    "heroImage": "Premium interior living room"
+  }
+}

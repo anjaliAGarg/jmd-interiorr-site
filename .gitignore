@@ -1,0 +1,17 @@
+# Dependency directories (npm modules)
+node_modules/
+jspm_packages/
+web_modules/
+
+# Local environment variables and secrets
+.env
+.env.local
+.env.production
+.env.development
+*.local
+
+dist/
+build/
+.next/
+.nuxt/
+out/
