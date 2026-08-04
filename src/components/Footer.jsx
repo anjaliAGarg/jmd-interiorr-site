@@ -29,8 +29,8 @@ function Footer() {
             <a href="mailto:jmdconstructions2018@gmail.com" className="block transition hover:text-text">
               jmdconstructions2018@gmail.com
             </a>
-            <a href="https://wa.me/919999999999" target="_blank" rel="noreferrer" className="block transition hover:text-text">
-              +91 99999 99999
+            <a href="https://wa.me/919821859634" target="_blank" rel="noreferrer" className="block transition hover:text-text">
+              +91 98218 59634
             </a>
           </div>
         </div>

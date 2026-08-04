@@ -1,10 +1,10 @@
 {
-  "companyName": "JMD INTERIORS",
-  "brandTagline": "Small Spaces. Big Living.",
+  "companyName": "JMD INTERIORR",
+  "brandTagline": "Beautiful Interiors That Fit Your Budget",
   "contact": {
     "email": "jmdconstructions2018@gmail.com",
-    "whatsappUrl": "https://wa.me/919999999999",
-    "phone": "+91 99999 99999"
+    "whatsappUrl": "https://wa.me/919821859634",
+    "phone": "+9821859634"
   },
   "navigation": {
     "links": [
@@ -17,7 +17,7 @@
   },
   "hero": {
     "badge": "Launching in Gurgaon",
-    "eyebrow": "Small Spaces. Big Living.",
+    "eyebrow": "Beautiful Interiors That Fit Your Budget.",
     "heading": "Beautiful interiors for modern apartments",
     "subheading": "Minimalist interiors designed for 2BHK & 3BHK homes in Gurgaon, focused on calm, clarity, and elevated living.",
     "consultButton": "Free Site Visit & Consultation",
@@ -119,7 +119,10 @@
     "form": {
       "name": "Name",
       "phone": "Phone",
-      "apartment": "Apartment Name",
+      "apartment": "Apartment Location",
+      "propertyType": "Property Type",
+      "bhk": "2BHK / 3BHK",
+      "budget": "Budget",
       "message": "Message",
       "submit": "Send on WhatsApp"
     }

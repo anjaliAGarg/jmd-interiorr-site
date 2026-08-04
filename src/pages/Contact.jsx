@@ -2,17 +2,49 @@ import { useState } from 'react'
 import labels from '../labels.json'
 
 function Contact() {
-  const [form, setForm] = useState({ name: '', phone: '', apartment: '', message: '' })
+  const [form, setForm] = useState({
+    name: '',
+    phone: '',
+    apartment: '',
+    propertyType: '',
+    bhk: '',
+    budget: '',
+    message: ''
+  })
+  const [errors, setErrors] = useState({})
 
   const whatsappUrl = () => {
-    const text = `Hello JMD Interiors\n\nName: ${form.name}\nPhone: ${form.phone}\nApartment: ${form.apartment}\n\nMessage: ${form.message}`
-    return `https://wa.me/919999999999?text=${encodeURIComponent(text)}`
+    const text = `Hello JMD Interiors\n\nName: ${form.name}\nPhone: ${form.phone}\nApartment Location: ${form.apartment}\nProperty Type: ${form.propertyType}\nBHK: ${form.bhk}\nBudget: ${form.budget}\n\nMessage: ${form.message}`
+    return `https://wa.me/919821859634?text=${encodeURIComponent(text)}`
+  }
+
+  const validateForm = () => {
+    const newErrors = {}
+
+    if (!form.phone.trim()) newErrors.phone = 'Phone is required.'
+    if (!form.bhk.trim()) newErrors.bhk = 'Please select 2BHK or 3BHK.'
+    if (!form.message.trim()) newErrors.message = 'Message is required.'
+
+    setErrors(newErrors)
+    return Object.keys(newErrors).length === 0
+  }
+
+  const handleSubmit = () => {
+    if (!validateForm()) return
+    window.open(whatsappUrl(), '_blank')
   }
 
   const handleChange = (event) => {
     const { name, value } = event.target
     setForm((prev) => ({ ...prev, [name]: value }))
+
+    if (errors[name]) {
+      setErrors((prev) => ({ ...prev, [name]: undefined }))
+    }
   }
+
+  const inputClassName = (field) =>
+    `w-full rounded-3xl border ${errors[field] ? 'border-red-400' : 'border-border'} bg-bg px-4 py-3 text-sm text-text outline-none transition focus:border-primary focus:ring-2 ${errors[field] ? 'focus:ring-red-200' : 'focus:ring-primary/20'}`
 
   return (
     <section className="mx-auto max-w-6xl px-6 py-20 lg:px-8">
@@ -44,7 +76,7 @@ function Contact() {
                 name="name"
                 value={form.name}
                 onChange={handleChange}
-                className="w-full rounded-3xl border border-border bg-bg px-4 py-3 text-sm text-text outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20"
+                className={inputClassName('name')}
               />
             </label>
             <label className="space-y-2 text-sm font-medium text-text">
@@ -54,20 +86,61 @@ function Contact() {
                 name="phone"
                 value={form.phone}
                 onChange={handleChange}
-                className="w-full rounded-3xl border border-border bg-bg px-4 py-3 text-sm text-text outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20"
+                required
+                className={inputClassName('phone')}
+              />
+              {errors.phone && <p className="text-sm text-red-600">{errors.phone}</p>}
+            </label>
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2">
+            <label className="space-y-2 text-sm font-medium text-text">
+              {labels.contactPage.form.apartment}
+              <input
+                type="text"
+                name="apartment"
+                value={form.apartment}
+                onChange={handleChange}
+                className={inputClassName('apartment')}
+              />
+            </label>
+            <label className="space-y-2 text-sm font-medium text-text">
+              {labels.contactPage.form.propertyType}
+              <input
+                type="text"
+                name="propertyType"
+                value={form.propertyType}
+                onChange={handleChange}
+                className={inputClassName('propertyType')}
               />
             </label>
           </div>
-          <label className="space-y-2 text-sm font-medium text-text">
-            {labels.contactPage.form.apartment}
-            <input
-              type="text"
-              name="apartment"
-              value={form.apartment}
-              onChange={handleChange}
-              className="w-full rounded-3xl border border-border bg-bg px-4 py-3 text-sm text-text outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20"
-            />
-          </label>
+          <div className="grid gap-6 sm:grid-cols-2">
+            <label className="space-y-2 text-sm font-medium text-text">
+              {labels.contactPage.form.bhk}
+              <select
+                name="bhk"
+                value={form.bhk}
+                onChange={handleChange}
+                required
+                className={inputClassName('bhk')}
+              >
+                <option value="">Select BHK</option>
+                <option value="2BHK">2BHK</option>
+                <option value="3BHK">3BHK</option>
+              </select>
+              {errors.bhk && <p className="text-sm text-red-600">{errors.bhk}</p>}
+            </label>
+            <label className="space-y-2 text-sm font-medium text-text">
+              {labels.contactPage.form.budget}
+              <input
+                type="text"
+                name="budget"
+                value={form.budget}
+                onChange={handleChange}
+                className={inputClassName('budget')}
+              />
+            </label>
+          </div>
           <label className="space-y-2 text-sm font-medium text-text">
             {labels.contactPage.form.message}
             <textarea
@@ -75,17 +148,18 @@ function Contact() {
               value={form.message}
               onChange={handleChange}
               rows="5"
-              className="w-full rounded-3xl border border-border bg-bg px-4 py-3 text-sm text-text outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20"
+              required
+              className={inputClassName('message')}
             />
+            {errors.message && <p className="text-sm text-red-600">{errors.message}</p>}
           </label>
-          <a
-            href={whatsappUrl()}
-            target="_blank"
-            rel="noreferrer"
+          <button
+            type="button"
+            onClick={handleSubmit}
             className="inline-flex w-full items-center justify-center rounded-full bg-primary px-7 py-4 text-sm font-semibold text-white transition hover:bg-[#24463D]"
           >
             {labels.contactPage.form.submit}
-          </a>
+          </button>
         </form>
       </div>
     </section>

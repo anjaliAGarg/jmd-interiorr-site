@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { FaWhatsapp } from 'react-icons/fa'
 
-const WhatsappUrl = 'https://wa.me/919999999999'
+const WhatsappUrl = 'https://wa.me/919821859634'
 
 function WhatsappButton() {
   return (

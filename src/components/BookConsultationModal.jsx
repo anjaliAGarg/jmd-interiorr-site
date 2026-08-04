@@ -7,16 +7,43 @@ const whatsappBase = labels.contact.whatsappUrl
 
 function BookConsultationModal({ isOpen, onClose }) {
   const [form, setForm] = useState({ name: '', phone: '', apartment: '', message: '' })
+  const [errors, setErrors] = useState({})
 
   const handleChange = (event) => {
     const { name, value } = event.target
     setForm((prev) => ({ ...prev, [name]: value }))
+
+    if (errors[name]) {
+      setErrors((prev) => ({ ...prev, [name]: undefined }))
+    }
+  }
+
+  const validateForm = () => {
+    const newErrors = {}
+
+    if (!form.name.trim()) newErrors.name = 'Name is required.'
+    if (!form.phone.trim()) newErrors.phone = 'Phone is required.'
+    if (!form.apartment.trim()) newErrors.apartment = 'Apartment name is required.'
+    if (!form.message.trim()) newErrors.message = 'Message is required.'
+
+    setErrors(newErrors)
+    return Object.keys(newErrors).length === 0
+  }
+
+  const handleSubmit = () => {
+    if (!validateForm()) return
+
+    window.open(whatsappUrl(), '_blank')
+    onClose()
   }
 
   const whatsappUrl = () => {
     const text = `Hello JMD Interiors\n\nName: ${form.name}\nPhone: ${form.phone}\nApartment: ${form.apartment}\n\nMessage: ${form.message}`
     return `${whatsappBase}?text=${encodeURIComponent(text)}`
   }
+
+  const inputClassName = (field) =>
+    `w-full rounded-3xl border ${errors[field] ? 'border-red-400' : 'border-border'} bg-bg px-4 py-3 text-sm text-text outline-none transition focus:border-primary focus:ring-2 ${errors[field] ? 'focus:ring-red-200' : 'focus:ring-primary/20'}`
 
   return (
     <AnimatePresence>
@@ -59,8 +86,10 @@ function BookConsultationModal({ isOpen, onClose }) {
                     name="name"
                     value={form.name}
                     onChange={handleChange}
-                    className="w-full rounded-3xl border border-border bg-bg px-4 py-3 text-sm text-text outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20"
+                    required
+                    className={inputClassName('name')}
                   />
+                  {errors.name && <p className="text-sm text-red-600">{errors.name}</p>}
                 </label>
                 <label className="space-y-2 text-sm font-medium text-text">
                   {labels.modal.fields.phone}
@@ -69,8 +98,10 @@ function BookConsultationModal({ isOpen, onClose }) {
                     name="phone"
                     value={form.phone}
                     onChange={handleChange}
-                    className="w-full rounded-3xl border border-border bg-bg px-4 py-3 text-sm text-text outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20"
+                    required
+                    className={inputClassName('phone')}
                   />
+                  {errors.phone && <p className="text-sm text-red-600">{errors.phone}</p>}
                 </label>
               </div>
               <label className="space-y-2 text-sm font-medium text-text">
@@ -80,8 +111,10 @@ function BookConsultationModal({ isOpen, onClose }) {
                   name="apartment"
                   value={form.apartment}
                   onChange={handleChange}
-                  className="w-full rounded-3xl border border-border bg-bg px-4 py-3 text-sm text-text outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20"
+                  required
+                  className={inputClassName('apartment')}
                 />
+                {errors.apartment && <p className="text-sm text-red-600">{errors.apartment}</p>}
               </label>
               <label className="space-y-2 text-sm font-medium text-text">
                 {labels.modal.fields.message}
@@ -90,8 +123,10 @@ function BookConsultationModal({ isOpen, onClose }) {
                   value={form.message}
                   onChange={handleChange}
                   rows="4"
-                  className="w-full rounded-3xl border border-border bg-bg px-4 py-3 text-sm text-text outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20"
+                  required
+                  className={inputClassName('message')}
                 />
+                {errors.message && <p className="text-sm text-red-600">{errors.message}</p>}
               </label>
               <div className="flex flex-col gap-4 sm:flex-row sm:justify-end">
                 <button
@@ -101,15 +136,13 @@ function BookConsultationModal({ isOpen, onClose }) {
                 >
                   {labels.modal.cancel}
                 </button>
-                <a
-                  href={whatsappUrl()}
-                  target="_blank"
-                  rel="noreferrer"
-                  onClick={onClose}
+                <button
+                  type="button"
+                  onClick={handleSubmit}
                   className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#24463D]"
                 >
                   {labels.modal.submit}
-                </a>
+                </button>
               </div>
             </form>
           </motion.div>

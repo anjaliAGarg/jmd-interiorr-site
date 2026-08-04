@@ -8,7 +8,7 @@ import labels from '../labels.json'
 const heroImage = 'https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=1200&q=80'
 
 function Home({ onOpenConsultation }) {
-  const whatsappLink = 'https://wa.me/919999999999'
+  const whatsappLink = 'https://wa.me/919821859634'
 
   return (
     <div className="overflow-hidden">
@@ -38,12 +38,7 @@ function Home({ onOpenConsultation }) {
               >
                 {labels.hero.consultButton}
               </button>
-              <a
-                href="#services"
-                className="inline-flex items-center justify-center rounded-full border border-primary bg-white px-7 py-4 text-sm font-semibold text-primary transition hover:bg-sand/60"
-              >
-                {labels.hero.projectsButton}
-              </a>
+          
             </div>
           </div>
           <motion.div
