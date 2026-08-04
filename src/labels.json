@@ -133,7 +133,10 @@
     "fields": {
       "name": "Name",
       "phone": "Phone",
-      "apartment": "Apartment Name",
+      "apartment": "Apartment Location",
+      "propertyType": "Property Type",
+      "bhk": "2BHK / 3BHK",
+      "budget": "Budget",
       "message": "Message"
     },
     "cancel": "Cancel",

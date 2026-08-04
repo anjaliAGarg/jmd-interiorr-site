@@ -6,7 +6,15 @@ import labels from '../labels.json'
 const whatsappBase = labels.contact.whatsappUrl
 
 function BookConsultationModal({ isOpen, onClose }) {
-  const [form, setForm] = useState({ name: '', phone: '', apartment: '', message: '' })
+  const [form, setForm] = useState({
+    name: '',
+    phone: '',
+    apartment: '',
+    propertyType: '',
+    bhk: '',
+    budget: '',
+    message: ''
+  })
   const [errors, setErrors] = useState({})
 
   const handleChange = (event) => {
@@ -21,9 +29,8 @@ function BookConsultationModal({ isOpen, onClose }) {
   const validateForm = () => {
     const newErrors = {}
 
-    if (!form.name.trim()) newErrors.name = 'Name is required.'
     if (!form.phone.trim()) newErrors.phone = 'Phone is required.'
-    if (!form.apartment.trim()) newErrors.apartment = 'Apartment name is required.'
+    if (!form.propertyType.trim()) newErrors.propertyType = 'Please select a property type.'
     if (!form.message.trim()) newErrors.message = 'Message is required.'
 
     setErrors(newErrors)
@@ -38,7 +45,7 @@ function BookConsultationModal({ isOpen, onClose }) {
   }
 
   const whatsappUrl = () => {
-    const text = `Hello JMD Interiors\n\nName: ${form.name}\nPhone: ${form.phone}\nApartment: ${form.apartment}\n\nMessage: ${form.message}`
+    const text = `Hello JMD Interiors\n\nName: ${form.name}\nPhone: ${form.phone}\nApartment Location: ${form.apartment}\nProperty Type: ${form.propertyType}\nBHK: ${form.bhk}\nBudget: ${form.budget}\n\nMessage: ${form.message}`
     return `${whatsappBase}?text=${encodeURIComponent(text)}`
   }
 
@@ -86,10 +93,8 @@ function BookConsultationModal({ isOpen, onClose }) {
                     name="name"
                     value={form.name}
                     onChange={handleChange}
-                    required
                     className={inputClassName('name')}
                   />
-                  {errors.name && <p className="text-sm text-red-600">{errors.name}</p>}
                 </label>
                 <label className="space-y-2 text-sm font-medium text-text">
                   {labels.modal.fields.phone}
@@ -104,18 +109,48 @@ function BookConsultationModal({ isOpen, onClose }) {
                   {errors.phone && <p className="text-sm text-red-600">{errors.phone}</p>}
                 </label>
               </div>
-              <label className="space-y-2 text-sm font-medium text-text">
-                {labels.modal.fields.apartment}
-                <input
-                  type="text"
-                  name="apartment"
-                  value={form.apartment}
-                  onChange={handleChange}
-                  required
-                  className={inputClassName('apartment')}
-                />
-                {errors.apartment && <p className="text-sm text-red-600">{errors.apartment}</p>}
-              </label>
+              <div className="grid gap-5 sm:grid-cols-2">
+                <label className="space-y-2 text-sm font-medium text-text">
+                  {labels.modal.fields.apartment}
+                  <input
+                    type="text"
+                    name="apartment"
+                    value={form.apartment}
+                    onChange={handleChange}
+                    className={inputClassName('apartment')}
+                  />
+                </label>
+                  <label className="space-y-2 text-sm font-medium text-text">
+                  {labels.modal.fields.propertyType}
+                  <select
+                    name="propertyType"
+                    value={form.propertyType}
+                    onChange={handleChange}
+                    required
+                    className={inputClassName('propertyType')}
+                  >
+                    <option value="">Select BHK</option>
+                    <option value="2BHK">2BHK</option>
+                    <option value="3BHK">3BHK</option>
+                    <option value="3BHK">4BHK</option>
+                    <option value="3BHK">other</option>
+                  </select>
+                  {errors.propertyType && <p className="text-sm text-red-600">{errors.propertyType}</p>}
+                </label>
+              </div>
+              <div className="grid gap-5 sm:grid-cols-2">
+              
+                <label className="space-y-2 text-sm font-medium text-text">
+                  {labels.modal.fields.budget}
+                  <input
+                    type="text"
+                    name="budget"
+                    value={form.budget}
+                    onChange={handleChange}
+                    className={inputClassName('budget')}
+                  />
+                </label>
+              </div>
               <label className="space-y-2 text-sm font-medium text-text">
                 {labels.modal.fields.message}
                 <textarea
