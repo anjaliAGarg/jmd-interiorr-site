@@ -22,7 +22,7 @@ function Contact() {
     const newErrors = {}
 
     if (!form.phone.trim()) newErrors.phone = 'Phone is required.'
-    if (!form.bhk.trim()) newErrors.bhk = 'Please select 2BHK or 3BHK.'
+   
     if (!form.message.trim()) newErrors.message = 'Message is required.'
 
     setErrors(newErrors)
@@ -103,23 +103,11 @@ function Contact() {
                 className={inputClassName('apartment')}
               />
             </label>
-            <label className="space-y-2 text-sm font-medium text-text">
+           <label className="space-y-2 text-sm font-medium text-text">
               {labels.contactPage.form.propertyType}
-              <input
-                type="text"
+              <select
                 name="propertyType"
                 value={form.propertyType}
-                onChange={handleChange}
-                className={inputClassName('propertyType')}
-              />
-            </label>
-          </div>
-          <div className="grid gap-6 sm:grid-cols-2">
-            <label className="space-y-2 text-sm font-medium text-text">
-              {labels.contactPage.form.bhk}
-              <select
-                name="bhk"
-                value={form.bhk}
                 onChange={handleChange}
                 required
                 className={inputClassName('bhk')}
@@ -130,6 +118,9 @@ function Contact() {
               </select>
               {errors.bhk && <p className="text-sm text-red-600">{errors.bhk}</p>}
             </label>
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2">
+            
             <label className="space-y-2 text-sm font-medium text-text">
               {labels.contactPage.form.budget}
               <input
