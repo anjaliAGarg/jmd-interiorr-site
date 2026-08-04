@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion'
 import Services from '../components/Services'
-import Process from '../components/Process'
+
 import Gallery from '../components/Gallery'
-import TrustSection from '../components/TrustSection'
+
 import labels from '../labels.json'
 
 const heroImage = 'https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=1200&q=80'
@@ -57,9 +57,9 @@ function Home({ onOpenConsultation }) {
         </div>
       </section>
 
-      <TrustSection />
+     
       <Services />
-      <Process />
+      
       <Gallery />
 
       <section className="mx-auto max-w-7xl px-6 py-20 text-center lg:px-8">
