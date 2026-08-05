@@ -12,7 +12,7 @@ function Home({ onOpenConsultation }) {
 
   return (
     <div className="overflow-hidden">
-      <section className="relative mx-auto max-w-7xl px-6 pt-20 pb-16 lg:px-8 lg:pt-28">
+      <section className="relative container mx-auto px-4 pt-20 pb-16 sm:px-6 lg:px-8 lg:pt-28">
         <div className="absolute right-0 top-12 hidden h-80 w-80 rounded-full bg-sand/60 blur-3xl lg:block" />
         <div className="grid gap-12 lg:grid-cols-[1fr_0.95fr] lg:items-center">
           <div className="max-w-2xl space-y-8">
@@ -62,7 +62,7 @@ function Home({ onOpenConsultation }) {
       
       <Gallery />
 
-      <section className="mx-auto max-w-7xl px-6 py-20 text-center lg:px-8">
+      <section className="container mx-auto px-4 py-20 text-center sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl rounded-[2rem] border border-border bg-white p-12 shadow-soft">
           <p className="text-sm font-semibold uppercase tracking-[0.28em] text-primary">{labels.homeCta.eyebrow}</p>
           <h2 className="mt-6 text-4xl font-semibold tracking-tight text-text sm:text-5xl">

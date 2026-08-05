@@ -20,7 +20,7 @@ const concepts = [
 
 function Projects() {
   return (
-    <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+    <section className="container mx-auto px-4 py-20 sm:px-6 lg:px-8">
       <div className="max-w-2xl">
         <p className="text-sm font-semibold uppercase tracking-[0.28em] text-primary">Design Concepts</p>
         <h1 className="mt-4 text-4xl font-semibold tracking-tight text-text sm:text-5xl">

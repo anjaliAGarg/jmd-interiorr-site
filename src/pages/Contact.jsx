@@ -47,7 +47,7 @@ function Contact() {
     `w-full rounded-3xl border ${errors[field] ? 'border-red-400' : 'border-border'} bg-bg px-4 py-3 text-sm text-text outline-none transition focus:border-primary focus:ring-2 ${errors[field] ? 'focus:ring-red-200' : 'focus:ring-primary/20'}`
 
   return (
-    <section className="mx-auto max-w-6xl px-6 py-20 lg:px-8">
+    <section className="container mx-auto px-4 py-20 sm:px-6 lg:px-8">
       <div className="grid gap-12 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
         <div className="space-y-8 rounded-[2rem] border border-border bg-white p-10 shadow-soft">
           <div>

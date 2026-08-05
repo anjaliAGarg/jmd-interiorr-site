@@ -3,8 +3,8 @@ import labels from '../labels.json'
 
 function Footer() {
   return (
-    <footer className="border-t border-border bg-white/80 px-6 py-12 text-sm text-muted shadow-sm shadow-slate-100 sm:px-8">
-      <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-3">
+    <footer className="border-t border-border bg-white/80 py-12 text-sm text-muted shadow-sm shadow-slate-100">
+      <div className="container mx-auto grid gap-10 px-4 sm:px-6 lg:px-8 md:grid-cols-3">
         <div className="space-y-4">
           <div className="text-lg font-semibold text-text">{labels.companyName}</div>
           <p className="max-w-md leading-7">{labels.footer.description}</p>

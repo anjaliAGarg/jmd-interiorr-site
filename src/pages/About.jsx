@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 
 function About() {
   return (
-    <section className="mx-auto max-w-6xl px-6 py-20 lg:px-8">
+    <section className="container mx-auto px-4 py-20 sm:px-6 lg:px-8">
       <div className="grid gap-12 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
         <motion.div
           initial={{ opacity: 0, x: -18 }}
