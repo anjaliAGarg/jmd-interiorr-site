@@ -9,7 +9,7 @@
   "navigation": {
     "links": [
       { "label": "About", "path": "/about" },
-      { "label": "Services", "path": "/#services" },
+      { "label": "Services", "path": "/services" },
       { "label": "Design Concepts", "path": "/projects" },
       { "label": "Contact", "path": "/contact" }
     ],

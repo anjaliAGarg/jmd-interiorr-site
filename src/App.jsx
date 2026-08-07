@@ -9,6 +9,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Projects from './pages/Projects'
 import Contact from './pages/Contact'
+import Services from './components/Services'
 
 const pageTransition = {
   hidden: { opacity: 0, y: 20 },
@@ -49,6 +50,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/services" element={<Services />} />
           </Routes>
         </motion.main>
       </AnimatePresence>
