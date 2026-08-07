@@ -59,14 +59,14 @@ function BookConsultationModal({ isOpen, onClose }) {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-4 py-8 sm:px-6"
+          className="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto bg-black/50 px-4 py-8 sm:px-6"
         >
           <motion.div
             initial={{ scale: 0.95, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.95, opacity: 0 }}
             transition={{ duration: 0.25 }}
-            className="w-full max-w-2xl rounded-[2rem] border border-border bg-white p-8 shadow-soft"
+            className="max-h-[85vh] w-full max-w-2xl overflow-y-auto rounded-[2rem] border border-border bg-white p-8 shadow-soft"
           >
             <div className="flex items-start justify-between gap-4">
               <div>
