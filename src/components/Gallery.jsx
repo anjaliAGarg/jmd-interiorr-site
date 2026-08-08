@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import labels from '../labels.json'
 
 const concepts = [
   {
@@ -19,13 +20,14 @@ function Gallery() {
   return (
     <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
       <div className="max-w-2xl">
-        <p className="text-sm font-semibold uppercase tracking-[0.28em] text-primary">Design Concepts</p>
+        <p className="text-sm font-semibold uppercase tracking-[0.28em] text-primary">{labels.projectsPage.heading}</p>
         <h2 className="mt-4 text-4xl font-semibold tracking-tight text-text sm:text-5xl">
-          Launching in Gurgaon with visual design concepts.
+          
+          
         </h2>
       </div>
       <div className="mt-10 grid gap-6 lg:grid-cols-3">
-        {concepts.map((item, index) => (
+        {labels.projectsPage.cards.map((item, index) => (
           <motion.article
             key={`${item.label}-${index}`}
             initial={{ opacity: 0, scale: 0.98 }}
