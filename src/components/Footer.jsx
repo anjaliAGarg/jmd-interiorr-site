@@ -12,6 +12,9 @@ function Footer() {
         <div className="space-y-4">
           <div className="font-medium text-text">{labels.footer.quickLinks}</div>
           <div className="grid gap-2 text-sm">
+            <Link to="/" className="transition hover:text-text">
+              Home
+            </Link>
             <Link to="/about" className="transition hover:text-text">
               About
             </Link>

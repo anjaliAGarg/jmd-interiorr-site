@@ -1,28 +1,6 @@
 import { motion } from 'framer-motion'
 import labels from '../labels.json'
 
-const services = [
-  {
-    title: 'Living Room',
-    description: 'Minimal lounges shaped for comfort, light, and spatial clarity.',
-    image: 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80',
-  },
-  {
-    title: 'Bedroom',
-    description: 'Soothing bedroom concepts for calm evenings and restful mornings.',
-    image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80',
-  },
-  {
-    title: 'Kitchen',
-    description: 'Elegant kitchens with clean lines, durable finishes, and intuitive flow.',
-    image: 'https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=80',
-  },
-  {
-    title: 'Complete Home',
-    description: 'Full home design that balances premium styling with practicality.',
-    image: 'https://images.unsplash.com/photo-1549187774-b4e9b0445b4b?auto=format&fit=crop&w=1200&q=80',
-  },
-]
 
 function Services() {
   return (
