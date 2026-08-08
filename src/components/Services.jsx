@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import labels from '../labels.json'
 
 const services = [
   {
@@ -29,11 +30,11 @@ function Services() {
       <div className="max-w-2xl">
         <p className="text-sm font-semibold uppercase tracking-[0.28em] text-primary">Our services</p>
         <h2 className="mt-4 text-4xl font-semibold tracking-tight text-text sm:text-5xl">
-          Interior design for every home space.
+          {labels.servicesSection.heading}
         </h2>
       </div>
       <div className="mt-10 grid gap-6 lg:grid-cols-2">
-        {services.map((service, index) => (
+        {labels.servicesSection.services.map((service, index) => (
           <motion.article
             key={service.title}
             initial={{ opacity: 0, y: 20 }}

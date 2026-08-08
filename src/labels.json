@@ -1,155 +1,195 @@
 {
-  "companyName": "JMD INTERIORR",
+  "companyName": "JMD Interiorr",
   "brandTagline": "Beautiful Interiors That Fit Your Budget",
   "contact": {
     "email": "jmdconstructions2018@gmail.com",
     "whatsappUrl": "https://wa.me/919821859634",
-    "phone": "+9821859634"
+    "phone": "+919821859634"
   },
   "navigation": {
     "links": [
-      { "label": "About", "path": "/about" },
-      { "label": "Services", "path": "/services" },
-      { "label": "Design Concepts", "path": "/projects" },
-      { "label": "Contact", "path": "/contact" }
+      {
+        "label": "About",
+        "path": "/about"
+      },
+      {
+        "label": "Services",
+        "path": "/services"
+      },
+      {
+        "label": "Design Concepts",
+        "path": "/projects"
+      },
+      {
+        "label": "Contact",
+        "path": "/contact"
+      }
     ],
-    "consultButton": "Book Consultation"
+    "consultButton": "Free Interior Consultation"
   },
   "hero": {
-    "badge": "Launching in Gurgaon",
+    "badge": "Interior Design & Execution in Gurgaon",
     "eyebrow": "Beautiful Interiors That Fit Your Budget.",
-    "heading": "Beautiful interiors for modern apartments",
-    "subheading": "Minimalist interiors designed for 2BHK & 3BHK homes in Gurgaon, focused on calm, clarity, and elevated living.",
-    "consultButton": "Free Site Visit & Consultation",
-    "projectsButton": "View Projects"
+    "heading": "Interior Design for 2BHK & 3BHK Apartments in Gurgaon",
+    "subheading": "JMD Interiorr provides practical, beautiful and budget-conscious home interiors for modern apartments. From space planning and modular kitchens to wardrobes and complete interior execution, we help working families create homes that are functional, comfortable and easy to maintain.",
+    "consultButton": "Get Free Interior Consultation",
+    "projectsButton": "View Design Concepts"
   },
   "homeCta": {
-    "eyebrow": "Ready to transform your home?",
-    "heading": "Move from concept to living with a single message.",
-    "button": "Chat on WhatsApp"
+    "eyebrow": "Planning your apartment interiors in Gurgaon?",
+    "heading": "Tell us about your home. We'll help you plan your interiors better.",
+    "button": "Start on WhatsApp"
   },
   "trustSection": {
-    "eyebrow": "Why homeowners choose us",
-    "heading": "A premium experience without the premium noise.",
+    "eyebrow": "Why choose JMD Interiorr",
+    "heading": "Practical home interiors designed for real homes, real budgets and real life.",
     "benefits": [
-      { "label": "Premium Materials", "description": "Selected finishes and fittings for refined interiors." },
-      { "label": "Transparent Pricing", "description": "Clear estimates with no hidden costs for every project." },
-      { "label": "Personalized Design", "description": "Custom layouts created around your lifestyle and space." },
-      { "label": "Project Management", "description": "Reliable delivery with careful coordination from start to finish." }
+      {
+        "label": "Smart Space Planning",
+        "description": "Make the most of every square foot with practical layouts and thoughtful storage for compact apartments."
+      },
+      {
+        "label": "Transparent Pricing",
+        "description": "Clear scope and estimates so you understand your interior requirements and expected costs before execution."
+      },
+      {
+        "label": "Low-Maintenance Interiors",
+        "description": "Practical materials, finishes and design choices selected for everyday family life."
+      },
+      {
+        "label": "End-to-End Interior Execution",
+        "description": "One team coordinating your home interior journey from design planning and material selection to execution and handover."
+      }
     ]
   },
   "servicesSection": {
-    "eyebrow": "Our services",
-    "heading": "Interior design for every home space.",
+    "eyebrow": "Our Interior Design Services in Gurgaon",
+    "heading": "Complete interior solutions for modern apartments.",
     "services": [
       {
-        "title": "Living Room",
-        "description": "Minimal lounges shaped for comfort, light, and spatial clarity.",
-        "imageAlt": "Living room design concept"
+        "title": "Living Room Interior Design",
+        "description": "Create a comfortable and clutter-free living room with practical layouts, smart storage and space-conscious furniture planning.",
+        "imageAlt": "Living room interior design for a modern apartment in Gurgaon",
+        "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80"
       },
       {
-        "title": "Bedroom",
-        "description": "Soothing bedroom concepts for calm evenings and restful mornings.",
-        "imageAlt": "Bedroom design concept"
+        "title": "Bedroom Interior Design",
+        "description": "Design calm and functional bedrooms with practical wardrobes, smart storage and layouts planned around everyday family life.",
+        "imageAlt": "Bedroom interior design for a 2BHK apartment in Gurgaon",
+        "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80"
       },
       {
-        "title": "Kitchen",
-        "description": "Elegant kitchens with clean lines, durable finishes, and intuitive flow.",
-        "imageAlt": "Kitchen design concept"
+        "title": "Modular Kitchen Design",
+        "description": "Make every inch count with practical storage, durable finishes and efficient layouts designed for everyday cooking and easy maintenance.",
+        "imageAlt": "Modern modular kitchen interior design in Gurgaon",
+        "image": "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=80"
       },
       {
-        "title": "Complete Home",
-        "description": "Full home design that balances premium styling with practicality.",
-        "imageAlt": "Complete home design concept"
+        "title": "Complete Home Interiors",
+        "description": "End-to-end interior design and execution for 2BHK and 3BHK apartments, from planning and material selection to final handover.",
+        "imageAlt": "Complete 2BHK and 3BHK home interior design in Gurgaon",
+        "image": "https://images.unsplash.com/photo-1549187774-b4e9b0445b4b?auto=format&fit=crop&w=1200&q=80"
       }
     ]
   },
   "processSection": {
-    "eyebrow": "Our process",
-    "heading": "A clear process for every home.",
+    "eyebrow": "Our Interior Design Process",
+    "heading": "A simple process. Less coordination for you.",
     "steps": [
-      "Book Consultation",
-      "Site Visit",
-      "Design Proposal",
-      "Execution",
-      "Handover"
+      "Free Interior Consultation",
+      "Site Visit & Requirement Planning",
+      "Design & Material Proposal",
+      "Interior Execution",
+      "Final Handover"
     ]
   },
   "gallerySection": {
-    "eyebrow": "Design Concepts",
-    "heading": "Launching in Gurgaon with visual design concepts.",
+    "eyebrow": "Our Interior Design Concepts",
+    "heading": "Modern apartment interior concepts designed for practical living.",
     "items": [
-      { "label": "Concept Visualization", "imageAlt": "Concept visualization 1" },
-      { "label": "Concept Visualization", "imageAlt": "Concept visualization 2" },
-      { "label": "Concept Visualization", "imageAlt": "Concept visualization 3" }
+      {
+        "label": "Living Room Concept",
+        "imageAlt": "Modern living room interior design concept for a Gurgaon apartment"
+      },
+      {
+        "label": "Modular Kitchen Concept",
+        "imageAlt": "Modern modular kitchen interior design concept for a Gurgaon apartment"
+      },
+      {
+        "label": "Bedroom Concept",
+        "imageAlt": "Modern bedroom interior design concept for a Gurgaon apartment"
+      }
     ]
   },
   "aboutPage": {
-    "eyebrow": "About JMD Interiors",
-    "heading": "Minimal premium interiors designed for homes in Gurgaon.",
-    "description": "JMD Interiors is a new Gurgaon-based studio focused on calm, functional, and refined interiors for 2BHK and 3BHK apartments. We deliver design-led spaces with premium finishes, transparent pricing, and a smooth process from first consultation to handover.",
-    "imageAlt": "Modern interior concept visualization"
+    "eyebrow": "About JMD Interiorr",
+    "heading": "Thoughtful interior design for modern apartments in Gurgaon.",
+    "description": "JMD Interiorr is a Gurgaon-based interior design and execution firm focused on practical, beautiful interiors for 2BHK and 3BHK apartments. We combine thoughtful space planning, smart storage, modular kitchen design, practical material choices and transparent execution to create homes that look beautiful and work effortlessly for everyday family life.",
+    "imageAlt": "Modern apartment interior design concept in Gurgaon"
   },
   "projectsPage": {
-    "eyebrow": "Design Concepts",
-    "heading": "Concept visualizations for premium apartment interiors.",
-    "description": "These concept visuals reflect the minimalist aesthetic and material approach that will be used in Gurgaon homes, demonstrating our focus on timeless details and spatial clarity.",
+    "eyebrow": "Interior Design Concepts",
+    "heading": "Modern 2BHK and 3BHK apartment interior design concepts.",
+    "description": "Explore our interior design concepts for modern apartments. These visualizations showcase our approach to space planning, modular kitchens, storage, materials, colours and practical interior solutions for everyday living.",
     "cards": [
       {
-        "title": "Soft Scandinavian Living",
-        "subtitle": "Airy tones with thoughtful furniture placement.",
-        "imageAlt": "Soft Scandinavian living concept"
+        "title": "Modern Living Room Interior",
+        "subtitle": "A practical living room concept with thoughtful furniture placement, storage and an uncluttered layout.",
+        "imageAlt": "Modern living room interior design concept",
+        "image": "https://images.unsplash.com/photo-1549187774-b4e9b0445b4b?auto=format&fit=crop&w=1200&q=80"
       },
       {
-        "title": "Textured Kitchen Concept",
-        "subtitle": "Warm materials and seamless flow for daily use.",
-        "imageAlt": "Textured kitchen concept"
+        "title": "Modern Modular Kitchen",
+        "subtitle": "A practical kitchen concept focused on storage, workflow, durable finishes and easy everyday maintenance.",
+        "imageAlt": "Modern modular kitchen interior design concept",
+        "image": "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=80"
       },
       {
-        "title": "Calm Bedroom Scheme",
-        "subtitle": "Quiet, balanced composition for better rest.",
-        "imageAlt": "Calm bedroom scheme"
+        "title": "Calm Bedroom Interior",
+        "subtitle": "A balanced bedroom concept with functional wardrobe storage and a comfortable, timeless design.",
+        "imageAlt": "Modern bedroom interior design concept",
+        "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80"
       }
     ]
   },
   "contactPage": {
-    "eyebrow": "Contact details",
-    "heading": "Reach out for a complimentary site visit.",
-    "description": "Based in Gurgaon, serving premium apartment interiors for 2BHK and 3BHK homes.",
+    "eyebrow": "Contact JMD Interiorr",
+    "heading": "Looking for an interior designer or interior contractor in Gurgaon?",
+    "description": "Tell us about your 2BHK or 3BHK apartment, requirements, budget and timeline. We'll understand your needs and help you plan the right interior solution for your home.",
     "form": {
       "name": "Name",
-      "phone": "Phone",
-      "apartment": "Apartment Location",
+      "phone": "WhatsApp Number",
+      "apartment": "Apartment Location in Gurgaon",
       "propertyType": "Property Type",
       "bhk": "2BHK / 3BHK",
-      "budget": "Budget",
-      "message": "Message",
-      "submit": "Send on WhatsApp"
+      "budget": "Approximate Interior Budget",
+      "message": "Tell us about your interior requirements",
+      "submit": "Get Free Interior Consultation"
     }
   },
   "modal": {
-    "eyebrow": "Book consultation",
-    "heading": "Share your details and start the WhatsApp conversation.",
+    "eyebrow": "Free Interior Consultation",
+    "heading": "Tell us about your home",
     "fields": {
       "name": "Name",
-      "phone": "Phone",
-      "apartment": "Apartment Location",
+      "phone": "WhatsApp Number",
+      "apartment": "Apartment Location in Gurgaon",
       "propertyType": "Property Type",
       "bhk": "2BHK / 3BHK",
-      "budget": "Budget",
-      "message": "Message"
+      "budget": "Approximate Interior Budget",
+      "message": "Tell us about your interior requirements"
     },
     "cancel": "Cancel",
-    "submit": "Submit to WhatsApp"
+    "submit": "Continue on WhatsApp"
   },
   "footer": {
-    "description": "Premium minimalist interiors for 2BHK & 3BHK flats in Gurgaon, built around luxury, clarity, and modern living.",
+    "description": "JMD Interiorr provides practical and beautiful interior design and execution for 2BHK and 3BHK apartments in Gurgaon, with a focus on smart space planning, modular kitchens, storage, everyday living and transparent pricing.",
     "quickLinks": "Quick links",
-    "contact": "Contact",
-    "copyright": "© {year} JMD Interiors. All rights reserved."
+    "contact": "Contact JMD Interiorr",
+    "copyright": "© {year} JMD Interiorr. All rights reserved."
   },
-  "whatsappButton": "Chat on WhatsApp",
+  "whatsappButton": "Chat with JMD Interiorr",
   "altText": {
-    "heroImage": "Premium interior living room"
+    "heroImage": "Modern 2BHK apartment interior design in Gurgaon"
   }
 }
